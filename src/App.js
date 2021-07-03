@@ -35,7 +35,7 @@ function App() {
     <div className="App container">
       <h1>Search Photo app</h1>
       <div className="form-search">
-            <input type="search" name="search" placeholder="search photoes by id" value={search} onChange={inputChange} />
+            <input type="number" name="search" placeholder="search photoes by id" value={search} onChange={inputChange} />
             <button onClick={fetchPhotos}>Get Album Photos By Id</button> 
       </div>
       <div style={{color: 'red', fontSize: '1.5rem', textAlign: "center"}}>{error && error }</div>
